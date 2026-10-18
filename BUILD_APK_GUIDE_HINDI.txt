@@ -1,0 +1,12 @@
+APK BUILD GUIDE (Hindi)
+
+Is project ke saath GitHub Actions workflow joda gaya hai jo cloud par debug APK build kar sakta hai.
+
+1. GitHub.com par sign in karein aur naya repository banayein.
+2. Is ZIP ko extract karke iske andar ke sabhi files (hidden .github folder samet) repository mein upload karein.
+3. Repository ke Actions tab mein jaayein.
+4. “Build Aviator Screen Reader APK” workflow chunein aur “Run workflow” dabayein.
+5. Build successful hone par run ke neeche Artifacts mein “aviator-screen-reader-debug-apk” download karein.
+6. ZIP artifact extract karein; app-debug.apk Android phone par install kar sakte hain. Android install warning aaye to sirf tab continue karein jab aap source aur build ko trust karte hain.
+
+Note: Ye debug APK hai, Play Store signed release nahi. App sirf visible screen text ko OCR se read karne ke liye hai; agla multiplier predict nahi karta. Build fail ho to Actions logs ka error dekhna hoga.
